@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/pictures/logo.png">
+    <title>MEGI's Corner</title>
+    <style>
+        body {
+            font-family: Poppins;
+            color: black;
+            margin-top: 200px;
+            margin-right: 45px;
+            background-color: #231f20;
+        }
+
+        .box1 {
+            display: block;
+        }
+
+        .box2 {
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 110px;
+            border: 2px black solid;
+        }
+
+        .box3 {
+            width: 78%;
+            display: inline-block;
+            border: 2px black solid;
+        }
+
+        .back-button img{
+            width: 100px;
+            margin-left: -30px
+        }
+
+        .transcript-button {
+            margin-top: 30px;
+            font-size: 25px;
+            width: auto;
+            background-color: rgba(61, 87, 61, .5);
+            border-radius: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border-style: none;
+            cursor: pointer;
+        }
+
+        .back-button{
+            margin-bottom: 50px;
+            padding: 10px;
+        }
+
+        .back-button a{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .back-button p{
+            display: inline-block;
+            vertical-align: top;
+            font-size: 60px;
+            font-family: Playfair Display;
+            color: #edced0;
+            font-style: italic;
+            font-weight: bold;
+            margin-left: -15px;
+            margin-top: -11px;
+
+        }
+
+        .goals-buttons button {
+            text-decoration: none;
+            font-family: Poppins;
+            font-size: 30px;
+            color: white;
+            background-color: #f38ca6;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .goals-buttons a{
+            text-decoration: none;
+            color: white;
+            margin-left: 0px;
+        }
+
+        .video1, .content-video-stamps {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .content-videos video {
+            width: 950px;
+            margin-right: 60px;
+        }
+
+        .content-video-stamps {
+            display: inline-block;
+            width: 16%;
+        }
+
+        .timestamp-button button {
+            display: inline-block;
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 55px;
+            border: none;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .timestamp-button {
+            display: inline-block;
+            padding: 15px;
+            /* border: 2px black solid; */
+            margin-right: 10px;
+            width: 90px;
+        }
+
+        .video-transcript {
+            background-color: white;
+            border-radius: 50px;
+            padding: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function change_text()
+        {
+            document.getElementById("text-box").innerHTML="Test"
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header class="heading">
+        <a href="index.html" class="logo">MEGI'S<br>CORNER</a>
+        <nav class="navbar">
+            <a href="/index.html">HOME</a>
+            <a href="/about.html">ABOUT</a>
+            <a href="/portfolio.html">PORTFOLIO</a>
+            <a href="#" style="font-weight: bold;">GOALS</a>
+            <a href="/journals.html">JOURNALS</a>
+        </nav>
+    </header> 
+
+
+    <div class="box1">
+        <div class="buttons">
+            <div class="back-button">
+                <a href="goals.html"><img src="/assets/pictures/back.png" alt=""></a>
+                <p>TRANSCRIPT</p>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="goals-buttons">
+            <button><a href="#">TRANSCRIPT</a></button>
+        </div>
+        <div class="goals-buttons">
+            <button><a href="narrative.html">NARRATIVE</a></button>
+        </div>
+        <div class="goals-buttons">
+            <button><a href="more.html">MORE ABOUT THIS...</a></button>
+        </div>
+            
+    </div>
+
+    <div class="box3">
+            <div class="content-videos">
+                <div class="video1">
+                    <video src="/assets/videos/video1.mp4">
+                    </video>
+                </div>
+                <div class="content-video-stamps">
+                    <div class="timestamp-button">
+                        <button onclick="change_text()">00:00:08</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:00:20</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:00:26</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:00:50</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:01:02</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:01:21</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:01:50</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:02:11</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:02:30</button>
+                    </div>
+                    <div class="timestamp-button">
+                        <button>00:03:19</button>
+                    </div>
+                </div>
+            </div>
+            <div class="video-transcript">
+                <p id="text-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique quod, at, deleniti maxime excepturi sed in qui atque illo accusantium omnis. Voluptatem suscipit iste fugiat facilis dolores doloremque nobis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique quod, at, deleniti maxime excepturi sed in qui atque illo accusantium omnis. Voluptatem suscipit iste fugiat facilis dolores doloremque nobis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique quod, at, deleniti maxime excepturi sed in qui atque illo accusantium omnis. Voluptatem suscipit iste fugiat facilis dolores doloremque nobis!</p>
+            </div>
+    </div>
+
+</body>
+</html>
